@@ -2,6 +2,9 @@
 
 > A set of free MIT-licensed high-quality SVG icons, sourced from [@refactoringui/heroicons](https://github.com/refactoringui/heroicons), as Vue functional components.
 
+## Preview
+https://vue-hero-icons.netlify.com/
+
 ## Install
 
 ```bash
