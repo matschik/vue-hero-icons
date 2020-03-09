@@ -1,5 +1,4 @@
 import Vue from 'vue'
-import 'typeface-inter/inter.css'
 import 'vue-popperjs/dist/vue-popper.css';
 //import "v-tippy/dist/tippy.css"
 import "prismjs/themes/prism.css"

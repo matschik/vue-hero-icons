@@ -44,7 +44,6 @@
     "rollup": "^2.0.0",
     "rollup-plugin-babel": "^4.4.0",
     "tailwindcss": "^1.2.0",
-    "typeface-inter": "^3.12.0",
     "v-tippy": "^1.0.0",
     "vue": "^2.6.11",
     "vue-github-badge": "^1.0.1",
