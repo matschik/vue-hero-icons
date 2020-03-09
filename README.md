@@ -56,9 +56,11 @@ By using ES imports like `import { AnnotationIcon } from "@vue-hero-icons/outlin
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## Author
+## Credits
 
 **heroicons** © [Refactoring UI](https://github.com/refactoringui), Released under the [MIT](./LICENSE) License.<br>
+
+## Author
 
 **vue-hero-icons** © [matschik](https://github.com/matschik), Released under the [MIT](./LICENSE) License.<br>
 <!-- Authored and maintained by Matschik with help from contributors ([list](https://github.com/matschik/vue-hero-icons/contributors)). -->
