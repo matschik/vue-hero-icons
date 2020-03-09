@@ -36,7 +36,7 @@ module.exports = {
                 require("tailwindcss")(resolvePath("./tailwind.config.js")),
                 require("autoprefixer"),
                 require("@fullhuman/postcss-purgecss")({
-                  content: ["./src/**/*.html", "./src/**/*.vue"],
+                  content: ["./**/*.html", "./**/*.vue"],
                   defaultExtractor: content =>
                     content.match(/[\w-/.:]+(?<!:)/g) || []
                 })
