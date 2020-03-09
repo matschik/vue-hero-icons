@@ -1,5 +1,5 @@
 import babel from "rollup-plugin-babel";
-import pascalCase from "pascal-case";
+import {pascalCase} from "pascal-case";
 
 const plugins = [
   babel({

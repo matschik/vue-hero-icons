@@ -1,22 +1,20 @@
 {
   "name": "vue-hero-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A set of free MIT-licensed high-quality SVG icons as Vue functional components.",
   "repository": {
     "url": "matschik/vue-hero-icons",
     "type": "git"
   },
-  "files": [
-    "dist",
-    "pkg"
-  ],
+  "homepage": "https://vue-hero-icons.netlify.com",
+  "keywords": ["icons", "vuejs"],
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "node generate && rollup -c",
     "docs:build": "npm run build && webpack --config docs/webpack.prod.js",
     "docs": "npm run build && webpack-dev-server --config docs/webpack.config.js"
   },
-  "author": "Mathieu SCHIMMERLING <mathieu.schimmerling@gmail.com>",
+  "author": "Mathieu SCHIMMERLING <mathieu.schimmerling@protonmail.com>",
   "license": "MIT",
   "dependencies": {
     "heroicons": "^0.1.0"
@@ -35,8 +33,7 @@
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "lodash.kebabcase": "^4.1.1",
-    "marked": "^0.6.0",
-    "pascal-case": "^2.0.1",
+    "pascal-case": "^3.1.1",
     "postcss-loader": "^3.0.0",
     "prismjs": "^1.19.0",
     "rimraf": "^3.0.2",

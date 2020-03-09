@@ -1,7 +1,7 @@
 const path = require("path");
-const pascalCase = require("pascal-case");
+const {pascalCase} = require("pascal-case");
 const fs = require("fs-extra");
-const pkg = require('./package.json')
+const pkg = require("./package.json");
 
 const handleComponentName = name => name.replace(/\-(\d+)/, "$1");
 
@@ -35,14 +35,19 @@ export default {
 }
 `.trim();
 
-const packageJSONTemplate = (category) =>
+const packageJSONTemplate = category =>
   `{
   "name": "@vue-hero-icons/${category}",
   "version": "${pkg.version}",
   "main": "lib/index.cjs.js",
   "module": "lib/index.es.js",
   "jsnext:main": "lib/index.es.js",
-  "license": "MIT",
+  "license": "${pkg.license}",
+  "homepage": "${pkg.homepage}",
+  "description": "${pkg.description}",
+  "keywords": ${JSON.stringify(pkg.keywords)},
+  "repository": ${JSON.stringify(pkg.repository)},
+  "author": "${pkg.author}",
   "dependencies": {
     "heroicons": "${pkg.dependencies.heroicons}",
     "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0"
@@ -51,7 +56,7 @@ const packageJSONTemplate = (category) =>
 `.trim();
 
 async function main() {
-  await fs.remove('./packages')
+  await fs.remove("./packages");
   const iconDirsPath = path.join(__dirname, "node_modules/heroicons/dist");
   const categories = await fs.readdir(iconDirsPath);
   const icons = [];
@@ -65,7 +70,7 @@ async function main() {
     const categoryPath = path.join(iconDirsPath, originCategory);
     const names = await fs.readdir(categoryPath);
     const iconsByCategory = names.map(filename => {
-      const name = filename.split('.')[0]
+      const name = filename.split(".")[0];
       return {
         path: path.join(categoryPath, filename),
         name,
@@ -93,16 +98,21 @@ async function main() {
 
     const indexJSPath = path.join(__dirname, packagePath, "index.js");
     if (await fs.exists(indexJSPath)) {
-      fs.appendFile(indexJSPath, indexJSContent, "utf8");
+      await fs.appendFile(indexJSPath, indexJSContent, "utf8");
     } else {
-      fs.writeFile(indexJSPath, indexJSContent, "utf8");
+      await fs.writeFile(indexJSPath, indexJSContent, "utf8");
     }
   }
-  
+
   for (const category of Object.values(categoryByOriginCategory)) {
-    fs.writeFile(
+    await fs.writeFile(
       path.join(__dirname, `./packages/${category}/package.json`),
       packageJSONTemplate(category)
+    );
+
+    await fs.copyFile(
+      "./README.md",
+      path.join(__dirname, `./packages/${category}/README.md`)
     );
   }
 }
