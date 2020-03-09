@@ -16,6 +16,9 @@
           A set of free MIT-licensed high-quality SVG icons as Vue functional
           components.
         </p>
+        <p class="mt-3 text-gray-600">
+          Icons sourced from [@refactoringui/heroicons](https://github.com/refactoringui/heroicons)
+        </p>
         <div class="mt-4 flex justify-center">
           <nav class="">
             <button
