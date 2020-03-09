@@ -59,4 +59,4 @@ const builds = [
   })
   .flat();
 
-export default builds;
+export default [].concat(...builds);

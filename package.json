@@ -12,8 +12,7 @@
   ],
   "scripts": {
     "prepublishOnly": "npm run build",
-    "build": "npm run generate && rollup -c",
-    "generate": "node generate",
+    "build": "node generate && rollup -c",
     "docs:build": "npm run build && webpack --config docs/webpack.prod.js",
     "docs": "npm run build && webpack-dev-server --config docs/webpack.config.js"
   },
