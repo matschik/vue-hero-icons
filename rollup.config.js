@@ -56,7 +56,6 @@ const builds = [
         }
       }
     ];
-  })
-  .flat();
+  });
 
 export default [].concat(...builds);
