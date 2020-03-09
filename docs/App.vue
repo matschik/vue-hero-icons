@@ -1,12 +1,14 @@
 <template>
   <div
-  class="pb-32"
+    class="pb-32"
     :class="{
       'text-gray-900 bg-white': theme === 'light',
       'text-white bg-gray-800': theme === 'dark'
     }"
   >
-    <div class="flex flex-end"><button @click="toggleTheme">Switch theme</button></div>
+    <!-- <div class="flex flex-end">
+      <button @click="toggleTheme">Switch theme</button>
+    </div> -->
     <div class="flex justify-center font-medium py-10">
       <div class="flex flex-col text-center">
         <div class="text-3xl font-semibold">Hero icons for Vue.js</div>
@@ -59,39 +61,50 @@
         />
       </div>
       <div class="mt-4">
-      <div v-for="(iconSet, index) in iconSets" :key="index" >
-        <div v-if="tabSelected === iconSet.tab || tabSelected === 'All'">
-          <div class="grid grid-cols-4 gap-4">
-            <div
-              v-for="(iconComponent, index) in filterBySearch(
-                iconSet.components
-              )"
-              :key="index"
-            >
+        <div v-for="(iconSet, index) in iconSets" :key="index">
+          <div v-if="tabSelected === iconSet.tab || tabSelected === 'All'">
+            <div class="grid grid-cols-4 gap-4">
               <div
-                class="px-4 py-6 shadow cursor-pointer rounded border-2 border-transparent"
-                :class="{
-                  'bg-gray-700': theme === 'dark',
-                  'text-gray-700': theme === 'light',
-                  'border-2 border-blue-500':
-                    iconSelected === iconComponent.name
-                }"
-                @click="selectIcon(iconComponent.name, iconSet.tab.toLowerCase())"
+                v-for="(iconComponent, index) in filterBySearch(
+                  iconSet.components
+                )"
+                :key="index"
               >
-                <div class="flex justify-center">
-                  <component :is="iconComponent" size="2.3x" />
+                <div
+                  class="px-4 py-6 shadow cursor-pointer rounded border-2 border-transparent"
+                  :class="{
+                    'bg-gray-700': theme === 'dark',
+                    'text-gray-700': theme === 'light',
+                    'border-2 border-blue-500':
+                      iconSelected === iconComponent.name
+                  }"
+                  @click="
+                    selectIcon(iconComponent.name, iconSet.tab.toLowerCase())
+                  "
+                >
+                  <div class="flex justify-center">
+                    <component :is="iconComponent" size="2.3x" />
+                  </div>
+                  <p
+                    class="flex justify-center mt-3"
+                    :class="{
+                      'text-gray-400': theme === 'dark',
+                      'text-gray-600': theme === 'light'
+                    }"
+                  >
+                    {{ iconComponent.name }}
+                  </p>
                 </div>
-                <p class="flex justify-center mt-3" :class="{
-                  'text-gray-400': theme === 'dark',
-                  'text-gray-600': theme === 'light',
-                }">{{ iconComponent.name }}</p>
               </div>
             </div>
           </div>
         </div>
-      </div></div>
+      </div>
     </div>
-    <IconPreview :iconSelected="iconSelected" :categorySelected="categorySelected" />
+    <IconPreview
+      :iconSelected="iconSelected"
+      :categorySelected="categorySelected"
+    />
   </div>
 </template>
 
@@ -152,15 +165,20 @@ export default {
     },
     selectIcon(name, category) {
       this.iconSelected = name;
-      this.categorySelected = category
+      this.categorySelected = category;
     },
     changeTab(name) {
+      this.resetSelectedIcon();
       this.tabSelected = name;
     },
     filterBySearch(components) {
       return Object.values(components).filter(component =>
         component.name.toLowerCase().includes(this.search.toLowerCase())
       );
+    },
+    resetSelectedIcon() {
+      this.iconSelected = "";
+      this.categorySelected = "";
     }
   }
 };

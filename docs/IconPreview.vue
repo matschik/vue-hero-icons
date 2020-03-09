@@ -27,14 +27,14 @@
               >
                 <span>Copy</span>
               </button>
-              <button
+              <!-- <button
                 class="ml-4 flex items-center justify-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:shadow-outline transition ease-in-out duration-150"
               >
                 See example
-              </button>
+              </button> -->
             </div>
           </div>
-          <div class="order-2 flex-shrink-0 sm:order-3 sm:ml-2">
+          <!-- <div class="order-2 flex-shrink-0 sm:order-3 sm:ml-2">
             <button
               type="button"
               class="-mr-1 flex p-2 rounded-md hover:bg-indigo-500 focus:outline-none focus:bg-indigo-500 transition ease-in-out duration-150"
@@ -54,7 +54,7 @@
                 />
               </svg>
             </button>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

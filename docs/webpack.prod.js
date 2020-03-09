@@ -7,7 +7,7 @@ const resolvePath = filepath => {
 };
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: resolvePath("./index.js"),
   output: {
     path: resolvePath("./dist"),

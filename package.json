@@ -13,6 +13,7 @@
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "node generate && rollup -c",
+    "docs:build": "webpack --config docs/webpack.prod.js",
     "docs": "webpack-dev-server --config docs/webpack.config.js"
   },
   "author": "Mathieu SCHIMMERLING <mathieu.schimmerling@gmail.com>",
