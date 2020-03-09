@@ -34,11 +34,11 @@
               </button> -->
             </div>
           </div>
-          <!-- <div class="order-2 flex-shrink-0 sm:order-3 sm:ml-2">
+          <div class="order-2 flex-shrink-0 sm:order-3 sm:ml-2">
             <button
               type="button"
               class="-mr-1 flex p-2 rounded-md hover:bg-indigo-500 focus:outline-none focus:bg-indigo-500 transition ease-in-out duration-150"
-              @click="close = true"
+              @click="onCloseClick"
             >
               <svg
                 class="h-6 w-6 text-white"
@@ -54,7 +54,7 @@
                 />
               </svg>
             </button>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
@@ -101,6 +101,9 @@ export default {
   methods: {
     copyToClipboard() {
       copyToClipboard(this.iconSelected);
+    },onCloseClick(){
+      this.close = true
+      this.$emit('close')
     }
   }
 };

@@ -1,11 +1,7 @@
 <template>
-  <div class="flex cursor-pointer" @click="copy">
+  <div class="flex">
     <div
-      class=" flex items-center justify-center rounded-tl rounded-bl p-2 inline-block"
-      :class="{
-        'bg-white': theme === 'dark',
-        'bg-gray-800': theme === 'light'
-      }"
+      class="flex items-center justify-center rounded-tl rounded-bl p-2 inline-block"
     >
       <img
         class="w-10"
@@ -14,21 +10,14 @@
       />
     </div>
     <p
-      class="rounded-tr rounded-br text-xs flex items-center font-medium py-2 px-4 text-white"
-      :class="{
-        'bg-gray-200 text-gray-800': theme === 'dark',
-        'bg-indigo-600': theme === 'light'
-      }"
+      class="rounded-tr rounded-br text-xs flex items-center font-medium py-2 px-4"
     >
-      <span v-if="showCopyMessage">Copied to clipboard !</span>
-      <span v-else class="code">{{ installCommand }}</span>
+      <span class="code">{{ installCommand }}</span>
     </p>
   </div>
 </template>
 
 <script>
-import { copyToClipboard } from "./helpers";
-
 export default {
   props: {
     name: {},
@@ -42,18 +31,6 @@ export default {
   computed: {
     installCommand() {
       return `npm i ${this.name}`;
-    }
-  },
-  methods: {
-    copy() {
-      if(this.showCopyMessage){
-        return;
-      }
-      copyToClipboard(this.installCommand);
-      this.showCopyMessage = true;
-      setTimeout(() => {
-        this.showCopyMessage = false;
-      }, 1000)
     }
   }
 };
