@@ -1,5 +1,7 @@
 # vue-hero-icons
 
+> A set of free MIT-licensed high-quality SVG icons, sourced from [@refactoringui/heroicons](https://github.com/refactoringui/heroicons), as Vue functional components.
+
 <a href="https://npmjs.org/package/@vue-hero-icons/outline">
   <img src="https://img.shields.io/npm/v/@vue-hero-icons/outline.svg"
        alt="npm version">
@@ -8,8 +10,6 @@
   <img src="https://img.shields.io/npm/l/@vue-hero-icons/outline.svg"
        alt="license">
 </a>
-
-> A set of free MIT-licensed high-quality SVG icons, sourced from [@refactoringui/heroicons](https://github.com/refactoringui/heroicons), as Vue functional components.
 
 ## Install
 
