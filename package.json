@@ -12,9 +12,10 @@
   ],
   "scripts": {
     "prepublishOnly": "npm run build",
-    "build": "node generate && rollup -c",
-    "docs:build": "webpack --config docs/webpack.prod.js",
-    "docs": "webpack-dev-server --config docs/webpack.config.js"
+    "build": "npm run generate && rollup -c",
+    "generate": "node generate",
+    "docs:build": "npm run generate && webpack --config docs/webpack.prod.js",
+    "docs": "npm run generate && webpack-dev-server --config docs/webpack.config.js"
   },
   "author": "Mathieu SCHIMMERLING <mathieu.schimmerling@gmail.com>",
   "license": "MIT",
