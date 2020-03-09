@@ -6,6 +6,15 @@ const resolvePath = filepath => {
   return path.join(__dirname, filepath);
 };
 
+/*
+{
+        extractor(content) {
+          return content.match(/[\w-/.:]+(?<!:)/g) // Regex to support Tailwind & Tailwind UI classes naming
+        },
+        extensions: ['html', 'vue', 'js']
+      }
+*/
+
 module.exports = {
   mode: "development",
   entry: resolvePath("./index.js"),
@@ -33,9 +42,7 @@ module.exports = {
             options: {
               ident: "postcss",
               plugins: [
-                require("tailwindcss")(
-                  resolvePath("./tailwind.config.js")
-                ),
+                require("tailwindcss")(resolvePath("./tailwind.config.js")),
                 require("autoprefixer")
               ]
             }

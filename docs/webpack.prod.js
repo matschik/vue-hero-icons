@@ -33,10 +33,13 @@ module.exports = {
             options: {
               ident: "postcss",
               plugins: [
-                require("tailwindcss")(
-                  resolvePath("./tailwind.config.js")
-                ),
-                require("autoprefixer")
+                require("tailwindcss")(resolvePath("./tailwind.config.js")),
+                require("autoprefixer"),
+                require("@fullhuman/postcss-purgecss")({
+                  content: ["./src/**/*.html", "./src/**/*.vue"],
+                  defaultExtractor: content =>
+                    content.match(/[\w-/.:]+(?<!:)/g) || []
+                })
               ]
             }
           }
