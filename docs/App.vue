@@ -114,6 +114,7 @@
             id="search"
             v-model="search"
             class="form-input block w-full sm:text-sm sm:leading-5"
+            :class="{'text-gray-800': isDark}"
             :placeholder="`Search ${countIconsByTab} icons...`"
           />
         </form>
