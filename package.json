@@ -30,7 +30,7 @@
     "@vue/babel-preset-jsx": "^1.1.2",
     "autoprefixer": "^9.7.4",
     "babel-loader": "^8.1.0",
-    "css-loader": "^3.4.2",
+    "css-loader": "^3.5.1",
     "friendly-errors-webpack-plugin": "^1.7.0",
     "fs-extra": "^9.0.0",
     "html-loader": "^0.5.5",
