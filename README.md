@@ -15,10 +15,10 @@
 
 ```bash
 # Only outline icons
-yarn add @vue-hero-icons/outline
+npm install @vue-hero-icons/outline
 
 # Only solid icons
-yarn add @vue-hero-icons/solid
+npm install @vue-hero-icons/solid
 ```
 
 ## Usage
