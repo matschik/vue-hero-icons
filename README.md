@@ -11,6 +11,8 @@
        alt="license">
 </a>
 
+Demo: https://vue-hero-icons.netlify.com/
+
 ## Install
 
 ```bash
