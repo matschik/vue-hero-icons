@@ -12,16 +12,15 @@
     "vuejs"
   ],
   "scripts": {
-    "geticons": "git clone https://github.com/refactoringui/heroicons.git node_modules/heroicons",
+    "docs": "npm run build && webpack-dev-server --config docs/webpack.config.js",
     "prepublishOnly": "npm run build",
     "build": "node generate && rollup -c",
-    "docs:build": "npm run build && webpack --config docs/webpack.prod.js",
-    "docs": "npm run build && webpack-dev-server --config docs/webpack.config.js"
+    "docs:build": "npm run build && webpack --config docs/webpack.prod.js"
   },
   "author": "Mathieu SCHIMMERLING <mathieu.schimmerling@protonmail.com>",
   "license": "MIT",
   "dependencies": {
-    "heroicons": "^0.1.0"
+    "heroicons": "git+https://github.com/refactoringui/heroicons.git#master"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",

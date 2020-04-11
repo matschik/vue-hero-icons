@@ -190,7 +190,7 @@ export default {
   data() {
     return {
       theme: "light",
-      isDark: false,
+      isDark: true,
       search: "",
       tabs: ["Outline", "Solid", "All"],
       tabSelected: "Outline",
