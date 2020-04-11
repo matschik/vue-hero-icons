@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/npm/l/@vue-hero-icons/outline.svg"
        alt="license">
 </a>
-
+<br/>
 Demo: https://vue-hero-icons.netlify.com/
 
 ## Install
