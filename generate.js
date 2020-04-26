@@ -1,9 +1,9 @@
 const path = require("path");
-const {pascalCase} = require("pascal-case");
+const { pascalCase } = require("pascal-case");
 const fs = require("fs-extra");
 const pkg = require("./package.json");
 
-const handleComponentName = name => name.replace(/\-(\d+)/, "$1");
+const handleComponentName = (name) => name.replace(/\-(\d+)/, "$1");
 
 const componentTemplate = (name, svg) =>
   `
@@ -35,7 +35,7 @@ export default {
 }
 `.trim();
 
-const packageJSONTemplate = category =>
+const packageJSONTemplate = (category) =>
   `{
   "name": "@vue-hero-icons/${category}",
   "version": "${pkg.version}",
@@ -63,24 +63,36 @@ async function main() {
 
   const categoryByOriginCategory = {
     "outline-md": "outline",
-    "solid-sm": "solid"
+    "solid-sm": "solid",
   };
 
   for (const originCategory of categories) {
     const categoryPath = path.join(iconDirsPath, originCategory);
     const names = await fs.readdir(categoryPath);
-    const iconsByCategory = names.map(filename => {
-      const name = filename.split(".")[0];
-      return {
-        path: path.join(categoryPath, filename),
-        name,
-        category: categoryByOriginCategory[originCategory],
-        componentName: pascalCase(`${handleComponentName(name)}-icon`).slice(2)
-      };
-    });
+
+    const iconsByCategory = names
+      .map((filename) => {
+        const name = filename.split(".")[0];
+        return {
+          path: path.join(categoryPath, filename),
+          name,
+          category: categoryByOriginCategory[originCategory],
+          componentName: pascalCase(`${handleComponentName(name)}-icon`).slice(
+            2
+          ),
+        };
+      })
+      .filter((icon) => {
+        if (
+          (icon.category === "outline" && icon.name.startsWith("sm-")) ||
+          (icon.category === "solid" && icon.name.startsWith("md-"))
+        ) {
+          return false;
+        }
+        return true;
+      });
     icons.push(...iconsByCategory);
   }
-
   for (const icon of icons) {
     // Create Vue component files
     const svg = await fs.readFile(icon.path, "utf8");
@@ -117,6 +129,6 @@ async function main() {
   }
 }
 
-main().catch(err => {
+main().catch((err) => {
   console.error(err);
 });
