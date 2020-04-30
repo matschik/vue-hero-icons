@@ -23,7 +23,7 @@
     "heroicons": "git+https://github.com/refactoringui/heroicons.git#master"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0",
+    "@babel/core": "^7.9.6",
     "@fullhuman/postcss-purgecss": "^2.1.2",
     "@tailwindcss/ui": "^0.2.2",
     "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
