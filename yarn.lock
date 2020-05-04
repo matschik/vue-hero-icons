@@ -206,10 +206,10 @@
     mini-svg-data-uri "^1.0.3"
     traverse "^0.6.6"
 
-"@tailwindcss/ui@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@tailwindcss/ui/-/ui-0.2.2.tgz#bdf558eed7e9c87b882acba502ac48081133a38c"
-  integrity sha512-Qj9ez4Q683fKfwTDse4EA2ote70RfNFJLlbfYzsoIz/SSdP0z3C1jtwSOBOvpA/Z1jlIbkHSZ56o76jcsjP0Fg==
+"@tailwindcss/ui@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@tailwindcss/ui/-/ui-0.3.0.tgz#846e489c61bdeb60bdd4e2c32033db770ad8d429"
+  integrity sha512-LucyddG60/XAGN7aau+Jn84dsl2BFMZya7o/rGVKSXBVXUv+9SoaGmkbPdl0G3kkpcfQrGndDPSkdUgVTS0y8g==
   dependencies:
     "@tailwindcss/custom-forms" "^0.2.1"
     hex-rgb "^4.1.0"
