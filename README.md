@@ -40,13 +40,13 @@ You can set a custom size using the `size` attribute.
 For multiple based sizing, pass the desired multiple followed by an `x`.
 
 ```html
-<annotation-icon size="1.5x" class="custom-class"></annotation-icon> 
+<AnnotationIcon size="1.5x" class="custom-class" />
 ```
 
 You can also set a `px` size directly by just passing an integer
 
 ```html
-<annotation-icon size="25" class="custom-class"></annotation-icon> 
+<AnnotationIcon size="25" class="custom-class" />
 ```
 
 ## Tree shaking
