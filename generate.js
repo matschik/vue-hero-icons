@@ -57,40 +57,29 @@ const packageJSONTemplate = (category) =>
 
 async function main() {
   await fs.remove("./packages");
-  const iconDirsPath = path.join(__dirname, "node_modules/heroicons/dist");
-  const categories = await fs.readdir(iconDirsPath);
+  const iconDirsPath = path.join(__dirname, "node_modules/heroicons");
+  const categories = ["outline", "solid"];
   const icons = [];
 
   const categoryByOriginCategory = {
-    "outline-md": "outline",
-    "solid-sm": "solid",
+    outline: "outline",
+    solid: "solid",
   };
 
   for (const originCategory of categories) {
     const categoryPath = path.join(iconDirsPath, originCategory);
-    const names = await fs.readdir(categoryPath);
+    const filenames = await fs.readdir(categoryPath);
 
-    const iconsByCategory = names
-      .map((filename) => {
-        const name = filename.split(".")[0];
-        return {
-          path: path.join(categoryPath, filename),
-          name,
-          category: categoryByOriginCategory[originCategory],
-          componentName: pascalCase(`${handleComponentName(name)}-icon`).slice(
-            2
-          ),
-        };
-      })
-      .filter((icon) => {
-        if (
-          (icon.category === "outline" && icon.name.startsWith("sm-")) ||
-          (icon.category === "solid" && icon.name.startsWith("md-"))
-        ) {
-          return false;
-        }
-        return true;
-      });
+    const iconsByCategory = filenames.map((filename) => {
+      const name = filename.split(".")[0];
+      return {
+        path: path.join(categoryPath, filename),
+        name,
+        category: categoryByOriginCategory[originCategory],
+        componentName: pascalCase(`${name}Icon`).replace("_", ""),
+      };
+    });
+
     icons.push(...iconsByCategory);
   }
   for (const icon of icons) {
