@@ -2416,7 +2416,7 @@ he@^1.1.0, he@^1.2.0:
 
 "heroicons@git+https://github.com/refactoringui/heroicons.git#master":
   version "0.2.0"
-  resolved "git+https://github.com/refactoringui/heroicons.git#bdbd41c50700c77300e4da38b1020a1765d14481"
+  resolved "git+https://github.com/refactoringui/heroicons.git#60e6750e1cee2477e62f62f54f4023690de7336c"
 
 hex-rgb@^4.1.0:
   version "4.1.0"
