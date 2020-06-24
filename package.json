@@ -28,7 +28,7 @@
     "@tailwindcss/ui": "^0.3.0",
     "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
     "@vue/babel-preset-jsx": "^1.1.2",
-    "autoprefixer": "^9.8.0",
+    "autoprefixer": "^9.8.4",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.5.3",
     "friendly-errors-webpack-plugin": "^1.7.0",
