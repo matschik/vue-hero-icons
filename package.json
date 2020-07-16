@@ -42,7 +42,7 @@
     "rimraf": "^3.0.2",
     "rollup": "^2.15.0",
     "rollup-plugin-babel": "^4.4.0",
-    "tailwindcss": "^1.4.6",
+    "tailwindcss": "^1.5.1",
     "vue": "^2.6.11",
     "vue-loader": "^15.9.2",
     "vue-style-loader": "^4.1.2",
