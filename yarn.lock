@@ -2477,8 +2477,9 @@ he@^1.1.0, he@^1.2.0:
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
 
 "heroicons@git+https://github.com/refactoringui/heroicons.git#master":
-  version "0.3.5"
-  resolved "git+https://github.com/refactoringui/heroicons.git#72de3e77c8be939d5b8004a0247de6c204823f66"
+  version "0.3.7"
+  uid fd7537549f717d1134bfffda9c4be6ea8ca250b0
+  resolved "git+https://github.com/refactoringui/heroicons.git#fd7537549f717d1134bfffda9c4be6ea8ca250b0"
 
 hex-rgb@^4.1.0:
   version "4.1.0"
