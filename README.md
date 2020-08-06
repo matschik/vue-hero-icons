@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/npm/v/@vue-hero-icons/outline.svg"
        alt="npm version">
 </a>
-<a href="https://github.com/matschik/vue-hero-icons/blob/master/LICENSE.md">
+<a href="https://github.com/matschik/vue-hero-icons/blob/master/LICENSE">
   <img src="https://img.shields.io/npm/l/@vue-hero-icons/outline.svg"
        alt="license">
 </a>
