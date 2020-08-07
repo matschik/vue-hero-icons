@@ -20,16 +20,18 @@
   "author": "Mathieu SCHIMMERLING <mathieu.schimmerling@protonmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
     "heroicons": "git+https://github.com/refactoringui/heroicons.git#master"
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "@tailwindcss/ui": "^0.5.0",
-    "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
     "@vue/babel-preset-jsx": "^1.1.2",
     "autoprefixer": "^9.8.6",
     "babel-loader": "^8.1.0",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
     "css-loader": "^3.6.0",
     "friendly-errors-webpack-plugin": "^1.7.0",
     "fs-extra": "^9.0.1",
