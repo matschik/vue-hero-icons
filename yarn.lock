@@ -2490,7 +2490,7 @@ he@^1.1.0, he@^1.2.0:
 
 "heroicons@git+https://github.com/refactoringui/heroicons.git#master":
   version "0.3.7"
-  resolved "git+https://github.com/refactoringui/heroicons.git#ecfba30b87166c07993ed8162ce47073752e41f9"
+  resolved "git+https://github.com/refactoringui/heroicons.git#82f6a4d82bac701402da82eca57b2f2b9037c914"
 
 hex-rgb@^4.1.0:
   version "4.1.0"
@@ -4335,10 +4335,10 @@ rollup-pluginutils@^2.8.1:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@^2.23.0:
-  version "2.23.0"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.23.0.tgz#b7ab1fee0c0e60132fd0553c4df1e9cdacfada9d"
-  integrity sha512-vLNmZFUGVwrnqNAJ/BvuLk1MtWzu4IuoqsH9UWK5AIdO3rt8/CSiJNvPvCIvfzrbNsqKbNzPAG1V2O4eTe2XZg==
+rollup@^2.23.1:
+  version "2.23.1"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.23.1.tgz#d458d28386dc7660c2e8a4978bea6f9494046c20"
+  integrity sha512-Heyl885+lyN/giQwxA8AYT2GY3U+gOlTqVLrMQYno8Z1X9lAOpfXPiKiZCyPc25e9BLJM3Zlh957dpTlO4pa8A==
   optionalDependencies:
     fsevents "~2.1.2"
 
