@@ -1,6 +1,6 @@
 {
   "name": "vue-hero-icons",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "A set of free MIT-licensed high-quality SVG icons as Vue functional components.",
   "repository": {
     "url": "matschik/vue-hero-icons",
@@ -42,7 +42,7 @@
     "postcss-loader": "^3.0.0",
     "prismjs": "^1.21.0",
     "rimraf": "^3.0.2",
-    "rollup": "^2.23.0",
+    "rollup": "^2.23.1",
     "rollup-plugin-babel": "^4.4.0",
     "tailwindcss": "^1.6.2",
     "vue": "^2.6.11",
