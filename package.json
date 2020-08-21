@@ -45,10 +45,10 @@
     "rollup": "^2.23.1",
     "rollup-plugin-babel": "^4.4.0",
     "tailwindcss": "^1.6.2",
-    "vue": "^2.6.11",
+    "vue": "^2.6.12",
     "vue-loader": "^15.9.3",
     "vue-style-loader": "^4.1.2",
-    "vue-template-compiler": "^2.6.11",
+    "vue-template-compiler": "^2.6.12",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
