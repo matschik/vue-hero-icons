@@ -21,7 +21,7 @@
   "license": "MIT",
   "dependencies": {
     "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
-    "heroicons": "git+https://github.com/refactoringui/heroicons.git#master"
+    "heroicons": "git+https://github.com/tailwindlabs/heroicons.git#master"
   },
   "devDependencies": {
     "@babel/core": "^7.11.4",

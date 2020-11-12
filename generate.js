@@ -3,7 +3,7 @@ const { pascalCase } = require("pascal-case");
 const fs = require("fs-extra");
 const pkg = require("./package.json");
 
-const handleComponentName = (name) => name.replace(/\-(\d+)/, "$1");
+// const handleComponentName = (name) => name.replace(/\-(\d+)/, "$1");
 
 const componentTemplate = (name, svg) =>
   `
@@ -50,14 +50,14 @@ const packageJSONTemplate = (category) =>
   "author": "${pkg.author}",
   "dependencies": {
     "heroicons": "${pkg.dependencies.heroicons}",
-    "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0"
+    "@vue/babel-helper-vue-jsx-merge-props": "${pkg.dependencies['@vue/babel-helper-vue-jsx-merge-props']}"
   }
 }
 `.trim();
 
 async function main() {
   await fs.remove("./packages");
-  const iconDirsPath = path.join(__dirname, "node_modules/heroicons");
+  const iconDirsPath = path.join(__dirname, "node_modules/heroicons/optimized");
   const categories = ["outline", "solid"];
   const icons = [];
 

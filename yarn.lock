@@ -2497,9 +2497,9 @@ he@^1.1.0, he@^1.2.0:
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
 
-"heroicons@git+https://github.com/refactoringui/heroicons.git#master":
-  version "0.4.0"
-  resolved "git+https://github.com/refactoringui/heroicons.git#a64e81b66fbff610143c4c0bdea005c6f8a8bf82"
+"heroicons@git+https://github.com/tailwindlabs/heroicons.git#master":
+  version "0.4.2"
+  resolved "git+https://github.com/tailwindlabs/heroicons.git#1cef5f13f97bddbbdbf04e352099cecca52d754d"
 
 hex-rgb@^4.1.0:
   version "4.1.0"
