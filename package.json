@@ -12,10 +12,10 @@
     "vuejs"
   ],
   "scripts": {
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "yarn build",
     "build": "node generate && rollup -c",
     "dev": "nuxt",
-    "docs:build": "nuxt build"
+    "docs:build": "yarn build && nuxt build"
   },
   "author": "Mathieu SCHIMMERLING <mathieu.schimmerling@protonmail.com>",
   "license": "MIT",
