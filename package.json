@@ -15,7 +15,7 @@
     "prepublishOnly": "yarn build",
     "build": "node generate && rollup -c",
     "dev": "nuxt",
-    "docs:build": "yarn build && nuxt build"
+    "docs:build": "yarn build && nuxt generate"
   },
   "author": "Mathieu SCHIMMERLING <mathieu.schimmerling@protonmail.com>",
   "license": "MIT",
