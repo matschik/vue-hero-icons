@@ -12,10 +12,10 @@
     "vuejs"
   ],
   "scripts": {
-    "docs": "npm run build && webpack-dev-server --config docs/webpack.config.js",
     "prepublishOnly": "npm run build",
     "build": "node generate && rollup -c",
-    "docs:build": "npm run build && webpack --config docs/webpack.prod.js"
+    "dev": "nuxt",
+    "docs:build": "nuxt build"
   },
   "author": "Mathieu SCHIMMERLING <mathieu.schimmerling@protonmail.com>",
   "license": "MIT",
@@ -25,32 +25,15 @@
   },
   "devDependencies": {
     "@babel/core": "^7.11.4",
-    "@fullhuman/postcss-purgecss": "^2.3.0",
-    "@tailwindcss/ui": "^0.5.0",
+    "@tailwindcss/ui": "^0.7.2",
     "@vue/babel-preset-jsx": "^1.1.2",
-    "autoprefixer": "^9.8.6",
     "babel-loader": "^8.1.0",
-    "babel-plugin-syntax-jsx": "^6.18.0",
     "babel-plugin-transform-vue-jsx": "^3.7.0",
-    "css-loader": "^3.6.0",
-    "friendly-errors-webpack-plugin": "^1.7.0",
     "fs-extra": "^9.0.1",
-    "html-loader": "^1.3.0",
-    "html-webpack-plugin": "^4.3.0",
-    "lodash.kebabcase": "^4.1.1",
+    "nuxt": "^2.14.7",
     "pascal-case": "^3.1.1",
-    "postcss-loader": "^3.0.0",
-    "prismjs": "^1.21.0",
-    "rimraf": "^3.0.2",
     "rollup": "^2.26.6",
     "rollup-plugin-babel": "^4.4.0",
-    "tailwindcss": "^1.7.5",
-    "vue": "^2.6.12",
-    "vue-loader": "^15.9.3",
-    "vue-style-loader": "^4.1.2",
-    "vue-template-compiler": "^2.6.12",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "tailwindcss": "^1.9.6"
   }
 }

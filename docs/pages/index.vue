@@ -80,7 +80,7 @@
           <button
             v-for="tab in tabs"
             :key="tab"
-            class="mr-4 px-3 py-2 font-medium text-sm leading-5 rounded-md text-gray-500 hover:text-gray-700 focus:outline-none focus:text-indigo-600 focus:bg-indigo-50"
+            class="mr-4 px-3 py-2 font-medium text-sm leading-5 rounded-md text-gray-500 hover:text-indigo-600 focus:outline-none focus:text-indigo-600 focus:bg-indigo-50"
             :class="{
               'text-indigo-700 bg-indigo-100': tabSelected === tab
             }"
@@ -178,10 +178,10 @@
 </template>
 
 <script>
-import Npm from "./Npm.vue";
-import IconPreview from "./IconPreview.vue";
-import * as outlineIcons from "../packages/outline";
-import * as solidIcons from "../packages/solid";
+import Npm from "../components/Npm.vue";
+import IconPreview from "../components/IconPreview.vue";
+import * as outlineIcons from "../../packages/outline";
+import * as solidIcons from "../../packages/solid";
 
 const { SearchIcon, MoonIcon, SunIcon } = outlineIcons;
 

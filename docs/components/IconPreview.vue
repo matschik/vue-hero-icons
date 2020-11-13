@@ -63,8 +63,8 @@
 
 <script>
 import { copyToClipboard } from "./helpers";
-import * as outlineIcons from "../packages/outline";
-import * as solidIcons from "../packages/solid";
+import * as outlineIcons from "../../packages/outline";
+import * as solidIcons from "../../packages/solid";
 
 const allIcons = {
   outline: outlineIcons,
