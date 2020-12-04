@@ -111,6 +111,7 @@
         <form class="relative rounded-md shadow-sm" autocomplete="off">
           <label for="search" class="sr-only">Search</label>
           <input
+            ref="search"
             id="search"
             v-model="search"
             class="form-input block w-full sm:text-sm sm:leading-5"
@@ -224,6 +225,9 @@ export default {
         );
       }
     }
+  },
+  mounted(){
+    this.$refs.search.focus();
   },
   methods: {
     toggleTheme() {
