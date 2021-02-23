@@ -23,7 +23,6 @@
     "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1"
   },
   "devDependencies": {
-    "heroicons": "git+https://github.com/tailwindlabs/heroicons.git#master",
     "@babel/core": "^7.13.1",
     "@babel/helper-module-imports": "^7.12.13",
     "@rollup/plugin-babel": "^5.3.0",
@@ -36,6 +35,7 @@
     "babel-plugin-transform-vue-jsx": "^4.0.1",
     "babel-preset-env": "^1.7.0",
     "fs-extra": "^9.1.0",
+    "heroicons": "git+https://github.com/tailwindlabs/heroicons.git#master",
     "nuxt": "^2.15.2",
     "pascal-case": "^3.1.2",
     "rollup": "^2.39.1",
