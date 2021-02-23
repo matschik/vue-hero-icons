@@ -20,21 +20,25 @@
   "author": "Mathieu SCHIMMERLING <mathieu.schimmerling@protonmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1",
-    "heroicons": "git+https://github.com/tailwindlabs/heroicons.git#master"
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1"
   },
   "devDependencies": {
+    "heroicons": "git+https://github.com/tailwindlabs/heroicons.git#master",
     "@babel/core": "^7.13.1",
+    "@babel/helper-module-imports": "^7.12.13",
+    "@rollup/plugin-babel": "^5.3.0",
     "@tailwindcss/ui": "^0.7.2",
+    "@vue/babel-plugin-jsx": "^1.0.3",
     "@vue/babel-preset-jsx": "^1.2.4",
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "babel-loader": "^8.2.2",
     "babel-plugin-syntax-jsx": "^6.18.0",
-    "babel-plugin-transform-vue-jsx": "^3.7.0",
+    "babel-plugin-transform-vue-jsx": "^4.0.1",
+    "babel-preset-env": "^1.7.0",
     "fs-extra": "^9.1.0",
     "nuxt": "^2.15.2",
     "pascal-case": "^3.1.2",
     "rollup": "^2.39.1",
-    "rollup-plugin-babel": "^4.4.0",
     "tailwindcss": "^1.9.6"
   }
 }
