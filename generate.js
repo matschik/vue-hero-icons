@@ -49,7 +49,6 @@ const packageJSONTemplate = (category) =>
   "repository": ${JSON.stringify(pkg.repository)},
   "author": "${pkg.author}",
   "dependencies": {
-    "heroicons": "${pkg.dependencies.heroicons}",
     "@vue/babel-helper-vue-jsx-merge-props": "${pkg.dependencies['@vue/babel-helper-vue-jsx-merge-props']}"
   }
 }
