@@ -1,6 +1,6 @@
 {
   "name": "vue-hero-icons",
-  "version": "1.7.0",
+  "version": "1.7.2",
   "description": "A set of free MIT-licensed high-quality SVG icons as Vue functional components.",
   "repository": {
     "url": "matschik/vue-hero-icons",
@@ -20,7 +20,7 @@
   "author": "Mathieu SCHIMMERLING <mathieu.schimmerling@protonmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1"
+    "babel-helper-vue-jsx-merge-props": "^2.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.13.1",
@@ -29,7 +29,6 @@
     "@tailwindcss/ui": "^0.7.2",
     "@vue/babel-plugin-jsx": "^1.0.3",
     "@vue/babel-preset-jsx": "^1.2.4",
-    "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "babel-loader": "^8.2.2",
     "babel-plugin-syntax-jsx": "^6.18.0",
     "babel-plugin-transform-vue-jsx": "^4.0.1",
