@@ -1,6 +1,6 @@
 # vue-hero-icons
 
-For Vue3, install the official package <a href="https://github.com/tailwindlabs/heroicons">@heroicons/vue</a>
+For Vue3, install the official package <a href="https://github.com/tailwindlabs/heroicons#vue">@heroicons/vue</a>
 
 > A set of free MIT-licensed high-quality SVG icons, sourced from [@tailwindlabs/heroicons](https://github.com/tailwindlabs/heroicons), as Vue 2 functional components.
 
