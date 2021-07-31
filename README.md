@@ -1,4 +1,4 @@
-# vue-hero-icons
+# vue-hero-icons for Vue2
 
 For Vue3, install the official package <a href="https://github.com/tailwindlabs/heroicons#vue">@heroicons/vue</a>
 
